@@ -39,9 +39,19 @@ and open the template in the editor.
                             <div class="btn-group">
                                 <a th:href="${'/product/' + product.id}" class="btn btn-info" role="button">Show</a>
                             </div>
+                            <div class="btn-group">
+                                <a th:href="${'/product/edit/' + product.id}" class="btn btn-warning" role="button">Update</a>
+                            </div>
+                            <div class="btn-group">
+                                <a th:href="${'/product/delete/' + product.id}" class="btn btn-danger" role="button">Delete</a>
+                            </div>
                         </td>
                     </tr>
                 </table>
+                <a th:href="${'/product/new'}" class="btn btn-success" role="button"> 
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    New Product
+                </a>
             </div>
         </div>
     </body>
